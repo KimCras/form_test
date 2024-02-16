@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        box-sizing: content-box;
+        padding: 15px;
+        border: solid rgb(176, 176, 176) 2px;
+        border-radius: 5px;
+    }
+
+    label {
+        padding-top: 10px;
+        padding-bottom: 3px;
+    }
+
+    input,
+    textarea {
+        background-color: rgb(240, 240, 240);
+    }
+
+    h1 {
+        margin: 0;
+    }
+
+    button {
+        margin-top: 10px;
+        background-color: green;
+        color: white;
+        padding: 10px;
+        width: 20%;
+        margin-right: auto;
+        margin-left: auto;
+        border-radius: 5px;
+    }
+</style>
+
+<body>
+    <form action="contact" netlify>
+        <h1>Contact form</h1>
+        <label for="name"> Name</label>
+        <input id="name" type="name" name="name" required />
+        <label htmlFor="email"> E-mail Adress</label>
+        <input id="email" type="email" name="email" required />
+        <label htmlFor="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Submit it</button>
+    </form>
+</body>
+
+</html>
